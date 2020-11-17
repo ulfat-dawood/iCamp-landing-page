@@ -18,6 +18,7 @@ body{
 	font-family: 'Varela Round', sans-serif;
 	background: #fff; 
     font-size: 2.5rem;
+    height: fit-content;
 }
 .container{
     width:80%;
@@ -81,9 +82,11 @@ header nav{
 
 header nav div{ 
     float:left;
-    margin: auto 30px;  
+    margin: auto 20px;  
 }
-
+header nav div:hover{
+    opacity: .6;
+}
 header nav .signup a{
     color:#FF6700;
     border: 1px solid #FF6700;
@@ -95,8 +98,8 @@ footer{
     width:100%;
     height: 70px;
     background: #eeeeee;
-    /* position: fixed;
-    bottom: 0; */
+    margin-top: 3em;
+    clear: both;
 }
 
 footer h3{
@@ -137,10 +140,14 @@ footer  nav img{
     padding: .5em 1em;
     background: #FF6700;
     color:#f9f9f9; 
+    cursor: pointer;
+}
+#landing-bg .left .btn:hover{
+    background: #fa7d29;
 }
 #landing-bg img{
     float: right;
-    margin:10em 0 ;
+    margin:10em 0 0 0 ;
     width: 40%; 
     transform: scale(1.5);
 }
@@ -161,8 +168,12 @@ footer  nav img{
     padding: .5em;
     background: #eeeeee;
     width: min-content;
-    margin:auto;
+    margin:auto auto 2em auto;
     border-radius: 5px;
+    cursor: pointer;
+}
+#login-bg .join .btn:hover{
+    background: #d6d5d5;
 }
 
 #login-bg .login{
@@ -170,8 +181,9 @@ footer  nav img{
     float: right;
     padding-top: 2em ;
     text-align: center;
-    height: 90vh;
+    height: calc(90vh-90px);
     background: #FEE9DD;
+    border-radius: 0 0 0 5px;
 }
 #login-bg .login form {
     width: 70%;
@@ -186,6 +198,7 @@ footer  nav img{
     height:30px; 
     background: #f9f9f9;
     border:.5px solid #eeeeee;
+    border-radius: 5px;
 }
 
 #login-bg .login button{
@@ -199,5 +212,11 @@ footer  nav img{
     border: none; 
     font-family: 'Varela Round', sans-serif;
     font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 5px;
     
+}
+#login-bg .login button:hover{
+    background: #fa7d29;
+
 }
